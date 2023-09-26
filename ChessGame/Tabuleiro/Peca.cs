@@ -1,6 +1,6 @@
 ﻿namespace ChessGame.tabuleiro
 {
-    internal class Peca
+    internal abstract class Peca //classe genérica
     {
         public Posicao Posicao {  get; set; }
         public Cor Cor { get; set; }
@@ -19,5 +19,7 @@
         {
             QteMovimentos++;
         }
+
+        public abstract bool[,] movimentosPossiveis();
     }
 }
