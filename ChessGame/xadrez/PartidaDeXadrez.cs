@@ -96,7 +96,7 @@ namespace ChessGame.xadrez
 
         public void validarPosicaoDeDestino(Posicao origem, Posicao destino)
         {
-            if (!Tab.Peca(origem).podeMoverPara(destino))
+            if (!Tab.Peca(origem).movimentoPossivel(destino))
             {
                 throw new TabuleiroException("Posição de destino inválida!");
             }
