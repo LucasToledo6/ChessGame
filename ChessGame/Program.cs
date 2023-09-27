@@ -42,7 +42,8 @@ namespace ChessGame
                         Console.ReadLine();
                     }
                 }
-                Tela.imprimirTabuleiro(partida.Tab);
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException e)
             {
